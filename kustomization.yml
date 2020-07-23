@@ -1,0 +1,16 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+resources:
+  # Individual apps
+  - creditcard-k8s/creditcard-deployment.yml
+  - creditcard-k8s/creditcard-service.yml
+  - creditcard-k8s/creditcard-postgresql.yml
+  - frontend-k8s/frontend-deployment.yml
+  - frontend-k8s/frontend-service.yml
+  - frontend-k8s/frontend-postgresql.yml
+  # service discovery eureka/consul
+  - registry-k8s/jhipster-registry.yml
+  - registry-k8s/application-configmap.yml
+
+patchesJson6902:

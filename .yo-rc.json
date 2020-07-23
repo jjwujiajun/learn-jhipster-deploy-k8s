@@ -1,0 +1,16 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["creditcard", "frontend"],
+    "directoryPath": "../",
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "NGJjMDM2YzMyYTY1MDg2YzFmN2Y4YTU1ZjcxYTE5ZjZkZmE0YWRmYzI5MjEyYzQxMTc2OTFjMWMyOWI2YzEwMjQzMDcyOTNlZjZjNWZmMmUyMmQyOWZlNzU2OTcyOTgwYmM4ZQ==",
+    "dockerRepositoryName": "jjwujiajun",
+    "dockerPushCommand": "docker image push",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "ingressDomain": "",
+    "monitoring": "no",
+    "istio": false
+  }
+}

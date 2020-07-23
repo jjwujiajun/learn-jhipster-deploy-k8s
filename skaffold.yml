@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: jjwujiajun/creditcard
+      context: ../creditcard
+      jib: {}
+    - image: jjwujiajun/frontend
+      context: ../frontend
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}
